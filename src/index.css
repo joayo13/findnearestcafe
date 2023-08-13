@@ -1,13 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    background: rgb(15, 15, 15);
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#coffee {
+    stroke-dasharray: 687;
+    stroke-dashoffset: 687;
+    animation: draw 3s ease;
+    animation-fill-mode: forwards;
+    animation-delay: 150ms;
+}
+#title {
+    stroke-dasharray: 944;
+    stroke-dashoffset: 944;
+    animation: draw 4s ease;
+    animation-fill-mode: forwards;
+}
+#heart {
+    stroke-dasharray: 186;
+    stroke-dashoffset: 186;
+    animation: draw 2s ease;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+#coffeedata {
+    animation: fadein 500ms ease;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+#blockingbox {
+    background-color: rgb(15, 15, 15);
+}
+@keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100;
+    }
 }
