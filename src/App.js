@@ -5,7 +5,7 @@ function App() {
   const [coffeePouring, setCoffeePouring] = useState(false)
 
   function scrollDownSmooth(lastY) {
-    window.scroll(0, window.scrollY + 2)
+    window.scroll(0, window.scrollY + 4)
     let scrollYamount = window.scrollY
     console.log('scrolling' + window.scrollY)
     const myTimeout = setTimeout(() => {scrollDownSmooth(window.scrollY)}, 30)
