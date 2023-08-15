@@ -47,7 +47,7 @@ function App() {
   return (
     <div className="flex flex-col relative items-center py-4">
       <div className="flex py-12">
-      <p1 className='text-white text-4xl'>Click the mug</p1>
+      <p1 className='text-white text-4xl'>Jocator</p1>
       </div>
       <div className='relative'>
       <button onClick={() => setCoffeePouring(true) }>

@@ -33,7 +33,7 @@ const NearestCoffeeShop = ({ google, latitude, longitude }) => {
       {/* <p>Name: {nearestCoffeeShop.name}</p>
       <p>Address: {nearestCoffeeShop.vicinity}</p>
       <p>Rating: {nearestCoffeeShop.rating}</p> */}
-      <h1 className='text-3xl'>Best Coffee Near you:</h1>
+      <h1 className='text-3xl'>Best cup of Joe:</h1>
       <p>Opulence Coffee</p>
       <p>21 Dalhousie Street</p>
       <div className='flex relative'>
