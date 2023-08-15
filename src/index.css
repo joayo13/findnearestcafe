@@ -4,6 +4,11 @@
 body {
     background: rgb(15, 15, 15);
 }
+#cup {
+    animation: fadein 2s ease;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+}
 #coffee {
     stroke-dasharray: 687;
     stroke-dashoffset: 687;
