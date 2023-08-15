@@ -7,31 +7,17 @@ body {
 #cup {
     animation: fadein 2s ease;
     animation-fill-mode: forwards;
-    animation-delay: 4s;
 }
 #coffee {
     stroke-dasharray: 687;
     stroke-dashoffset: 687;
-    animation: draw 3s ease;
+    animation: draw 2s ease;
     animation-fill-mode: forwards;
     animation-delay: 150ms;
 }
-#title {
-    stroke-dasharray: 944;
-    stroke-dashoffset: 944;
-    animation: draw 4s ease;
-    animation-fill-mode: forwards;
-}
-#heart {
-    stroke-dasharray: 186;
-    stroke-dashoffset: 186;
-    animation: draw 2s ease;
-    animation-delay: 4s;
-    animation-fill-mode: forwards;
-}
 #coffeedata {
-    animation: fadein 500ms ease;
-    animation-delay: 2s;
+    animation: fadein 1s ease;
+    animation-delay: 1.5s;
     animation-fill-mode: forwards;
 }
 #blockingbox {
