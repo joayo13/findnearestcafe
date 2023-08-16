@@ -47,7 +47,7 @@ function App() {
   return (
     <div id='beans' className="flex flex-col relative items-center py-4">
       <div className="flex py-32">
-      <p1 id='jocator' className='text-white text-4xl'>The Jocator</p1>
+      <p1 id='jocator' className='text-white text-4xl mr-2'>The Jocator</p1>
       </div>
       <div className='relative'>
       <svg className='absolute -top-24 left-16' width="37" height="73" viewBox="0 0 37 73" fill="none" xmlns="http://www.w3.org/2000/svg">
