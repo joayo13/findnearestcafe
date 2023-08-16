@@ -60,7 +60,7 @@ function App() {
 <path id='steam3' d="M17 73C-2.36732 71.924 0.166263 35.3987 16.3889 31.1667C19.7847 30.2808 24.2843 29.3603 26 25.5C27.3875 22.3781 30.8974 15.765 28.4445 12.6111C22.5689 5.05678 7.8442 19.6044 6.22223 16C1.87647 6.34276 10.9787 7.02129 15 3" stroke="white" stroke-width="5" stroke-linecap="round"/>
 </svg>
       <button onClick={() => setCoffeePouring(true) }>
-      <img id='cup' className={coffeePouring ? '-rotate-45 transition-all relative z-20' : 'opacity-0'} src={coffeeImage} alt='cup of coffee'></img>
+      <img id='cup' className={coffeePouring ? '-rotate-45 transition-all relative z-20' : null} src={coffeeImage} alt='cup of coffee'></img>
       </button>
       {coffeePouring ? 
       <svg className='absolute top-[9.1rem] -left-[2.0rem] -scale-x-100 z-0' width="116" height="678" viewBox="0 0 116 678" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -69,10 +69,10 @@ function App() {
        : null}
       </div>
       {error}
-      {coffeePouring ? <div id='coffeedata' className='flex flex-col w-full md:w-[40rem] bg-lime-800 rounded-lg overflow-hidden absolute -bottom-[50rem] opacity-0 z-20'>
+      {coffeePouring ? <div id='coffeedata' className='flex flex-col w-full md:w-[40rem] bg-neutral-950 bg-opacity-80 rounded-lg overflow-hidden absolute -bottom-[54rem] opacity-0 z-20'>
         <CoffeeShopFinder latitude={latitude} longitude={longitude}/>
       </div> : null}
-      <footer className='absolute -bottom-[100vh] text-white'>Github repo: github.com/blahlbahlbah</footer>
+      <footer className='absolute -bottom-[110vh] text-white'>Github repo: github.com/blahlbahlbah</footer>
       </div>
   );
 }

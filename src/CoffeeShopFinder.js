@@ -36,9 +36,9 @@ const NearestCoffeeShop = ({ google, latitude, longitude }) => {
       <div id='beansbanner' className='w-full py-4 shadow-[inset_0_-60px_50px_-20px_rgba(0,0,0,0.5)]'>
       <h1 className='text-3xl'>Best cup of Joe:</h1>
       </div>
-      <p className='py-4'>Opulence Coffee</p>
-      <p className='py-4'>21 Dalhousie Street</p>
-      <p>Rating</p>
+      <p className='py-4'>Cafe: Opulence Coffee</p>
+      <p className='py-4'>Address: 21 Dalhousie Street</p>
+      <p>Cafe Rating</p>
       <div className='flex relative py-4'>
         {/* stars */}
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="0" stroke="currentColor" class="w-10 h-10">

@@ -10,16 +10,16 @@ body {
     opacity: 0.5;
     stroke-dasharray: 133;
     stroke-dashoffset: 133;
-    animation: steam 2s ease;
+    animation: steam 1.8s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     animation-delay: 50ms;
 }
 #steam2 {
     opacity: 0.5;
-    stroke-dasharray: 130;
-    stroke-dashoffset: 130;
-    animation: steam 2.5s ease;
+    stroke-dasharray: 131;
+    stroke-dashoffset: 131;
+    animation: steam 1.5s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     animation-delay: 200ms;
@@ -28,14 +28,10 @@ body {
     opacity: 0.5;
     stroke-dasharray: 122;
     stroke-dashoffset: 122; 
-    animation: steam 3s ease;
+    animation: steam 1.3s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     animation-delay: 400ms;
-}
-#cup {
-    animation: fadein 2s ease;
-    animation-fill-mode: forwards;
 }
 #beansbanner {
     background-image: url('beansbanner.jpg');
