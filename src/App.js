@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import CoffeeShopFinder from './CoffeeShopFinder';
 import coffeeImage from './Frame 1 (5).png'
+import githubLogo from './github.png'
 
 function App() {
   const [coffeePouring, setCoffeePouring] = useState(false)
@@ -60,7 +61,7 @@ function App() {
 <path id='steam3' d="M17 73C-2.36732 71.924 0.166263 35.3987 16.3889 31.1667C19.7847 30.2808 24.2843 29.3603 26 25.5C27.3875 22.3781 30.8974 15.765 28.4445 12.6111C22.5689 5.05678 7.8442 19.6044 6.22223 16C1.87647 6.34276 10.9787 7.02129 15 3" stroke="white" stroke-width="5" stroke-linecap="round"/>
 </svg>
 </div> : null}
-      <button onClick={() => setCoffeePouring(true) }>
+      <button className='cursor-pointer' onClick={() => setCoffeePouring(true) }>
       <img id='cup' className={coffeePouring ? '-rotate-45 transition-all relative z-20' : null} src={coffeeImage} alt='cup of coffee'></img>
       </button>
       {coffeePouring ? 
@@ -72,9 +73,9 @@ function App() {
       </div>
       {error}
       {coffeePouring ? <div id='coffeedata' className='flex flex-col w-full md:w-[40rem] border border-neutral-800 bg-neutral-950 bg-opacity-80 rounded-lg overflow-hidden absolute -bottom-[35rem] opacity-0 z-20'>
-        <CoffeeShopFinder latitude={latitude} longitude={longitude}/>
+        <CoffeeShopFinder latitude={latitude} longitude={longitude} setCoffeePouring={setCoffeePouring}/>
       </div> : null}
-      <footer className='absolute -bottom-[40rem] text-white'>Github repo: <a className='underline text-blue-500' href='https://github.com/joayo13/findnearestcafe'>https://github.com/joayo13/findnearestcafe</a></footer>
+      <footer className='absolute flex gap-2 -bottom-[40rem] text-white'><img className='w-6 h-6 invert' alt='github logo' src={githubLogo}></img><a className='underline text-blue-500' href='https://github.com/joayo13/findnearestcafe'>https://github.com/joayo13/findnearestcafe</a></footer>
       </div>
   );
 }
