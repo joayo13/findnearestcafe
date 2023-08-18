@@ -3,7 +3,7 @@
 @tailwind utilities;
 body {
     background: rgb(15, 15, 15);
-    font-family: 'Pacifico', cursive;
+    font-family: 'Open Sans', sans-serif;
     background-image: url('wood.jpg');
 }
 #steam1 {
