@@ -31,7 +31,7 @@ const NearestCoffeeShop = ({ google, latitude, longitude, setCoffeePouring }) =>
   }, [google, latitude, longitude, hasFetchedData]);
 
   if (!nearestCoffeeShop) {
-    return <div>Loading...</div>;
+    return <div className='text-neutral-300 py-2 px-4'>Could not find Coffee Shop, Try Again.</div>;
   }
   const googleMapsLink = `https://www.google.com/maps/place/?q=place_id:${encodeURIComponent(
     nearestCoffeeShop.place_id

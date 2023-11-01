@@ -75,7 +75,7 @@ function App() {
       {coffeePouring ? <div id='coffeedata' className='flex flex-col w-full md:w-[40rem] border border-neutral-800 bg-neutral-950 bg-opacity-80 rounded-lg overflow-hidden absolute -bottom-[35rem] opacity-0 z-20'>
         <CoffeeShopFinder latitude={latitude} longitude={longitude} setCoffeePouring={setCoffeePouring}/>
       </div> : null}
-      <footer className='absolute flex gap-2 -bottom-[40rem] text-white'><img className='w-6 h-6 invert' alt='github logo' src={githubLogo}></img><a className='underline text-blue-500' href='https://github.com/joayo13/findnearestcafe'>https://github.com/joayo13/findnearestcafe</a></footer>
+      <footer className='absolute flex gap-2 -bottom-[40rem] text-white'><img className='w-6 h-6 invert' alt='github logo' src={githubLogo}></img><a className='underline text-blue-500' href='https://github.com/joayo13/findnearestcafe'>Source Code</a></footer>
       </div>
   );
 }
